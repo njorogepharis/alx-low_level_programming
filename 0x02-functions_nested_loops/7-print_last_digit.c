@@ -13,7 +13,3 @@ lastdigit *= -1;
 _putchar (lastdigit + '0');
 return (lastdigit);
 }
-Footer
-© 2022 GitHub, Inc.
-Footer navigation
-Term
