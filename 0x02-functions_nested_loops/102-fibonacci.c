@@ -1,17 +1,29 @@
 #include <stdio.h>
 /**
-*main - prints count of multiples
-*of 3 or 5 below 1024
-*Return: return 0
-*/
+ * main - main function
+ *
+ * Return: nothing
+ */
 int main(void)
 {
-int n, sum = 0;
-for (n = 0; n < 1024; n++)
-{
-if ((n % 3) == 0 || (n % 5) == 0)
-sum += n;
-}
-printf("%d\n", sum);
-return (0);
+	int counter = 2;
+	long int a = 1;
+	long int b = a + 1;
+	long int c = a + b;
+
+	printf("%ld, %ld, ", a, b);
+	while (counter < 50)
+	{
+		printf("%ld", c);
+		counter++;
+		a = b;
+		b = c;
+		c = a + b;
+		if (counter < 50)
+		{
+			printf(", ");
+		}
+	}
+	printf("\n");
+	return (0);
 }
